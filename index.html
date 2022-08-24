@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Connect 4</title>
+
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <center id="gameMode">
+            <h1>
+                Choose Game Mode<br>
+                <button id="playHuman" onclick="human()">Play with Friend</button>
+                <button id="playAI" onclick="ai()">Play with AI</button>
+            </h1>
+        </center>
+        <center id="playerTurn" hidden><h1> Turn: Player <span id="turn">1</span></h1></center>
+        <center>
+            <h1 id="result" hidden></h3>
+            <button id="rematch" onclick="rematch()" hidden> Play Again? </button>
+            <button id="newGame" onclick="newGame()" hidden> New Game </button>
+            <h3 id="score" hidden>Score <br>
+                Player 1 : <span id="score_player1"></span><br>
+                Player 2 : <span id="score_player2"></span>
+            </h3>
+        </center>
+        <br>
+        <div id="connect4"></div>
+
+        <script src="index.js"></script>
+    </body>
+</html>

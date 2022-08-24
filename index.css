@@ -1,0 +1,27 @@
+#connect4 {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    background-color: blue;
+    gap: 1px;
+    padding: 1px;
+    width: 50%;
+    height: 500px;
+    margin:0% auto;
+}
+
+#connect4 > div {
+    background-color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    border-radius: 50%;
+    margin: 5px;
+  }
+
+.player1 {
+    background-color: red !important;
+}
+
+.player2 {
+    background-color: yellow !important;
+}
